@@ -14,11 +14,11 @@ class GlobalTracer
     private static $tracer;
 
     /**
-     * @param Tracer $tracer
+     * @param Tracer|null $tracer
      *
      * @return void
      */
-    public static function set(Tracer $tracer)
+    public static function set(Tracer $tracer = null)
     {
         self::$tracer = $tracer;
     }

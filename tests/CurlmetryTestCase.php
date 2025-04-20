@@ -8,6 +8,14 @@ if (PHP_VERSION_ID < 70100) {
     require_once __DIR__ . '/CurlmetryTestCaseBase.v7.php';
 }
 
+/**
+ * Class CurlmetryTestCase
+ *
+ * Provides multiple assertion methods for string containment
+ * compatibility across different versions of PHPUnit.
+ *
+ * @extends \PHPUnit\Framework\TestCase
+ */
 class CurlmetryTestCase extends CurlmetryTestCaseBase
 {
     /**

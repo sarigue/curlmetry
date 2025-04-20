@@ -51,6 +51,23 @@ class Tracer implements \JsonSerializable
     }
 
     /**
+     * @return Tracer
+     */
+    public static function getGlobal()
+    {
+        return GlobalTracer::get();
+    }
+
+    /**
+     * @return $this
+     */
+    public function setAsGlobal()
+    {
+        GlobalTracer::set($this);
+        return $this;
+    }
+
+    /**
      * @param $name
      *
      * @return SpanBuilder

@@ -86,6 +86,23 @@ class TracerProvider implements ShutdownInterface, \JsonSerializable
     }
 
     /**
+     * @return TracerProvider
+     */
+    public static function getGlobal()
+    {
+        return GlobalTracerProvider::get();
+    }
+
+    /**
+     * @return $this
+     */
+    public function setAsGlobal()
+    {
+        GlobalTracerProvider::set($this);
+        return $this;
+    }
+
+    /**
      * @return mixed
      */
     public function jsonSerialize()

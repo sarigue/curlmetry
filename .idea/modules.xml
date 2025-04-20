@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/signozlib.iml" filepath="$PROJECT_DIR$/.idea/signozlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/curlmetry.iml" filepath="$PROJECT_DIR$/.idea/curlmetry.iml" />
     </modules>
   </component>
 </project>

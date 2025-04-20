@@ -16,7 +16,7 @@
   <component name="PhpCodeSniffer">
     <phpcs_settings>
       <PhpCSConfiguration beautifier_path="$PROJECT_DIR$/vendor/bin/phpcbf" tool_path="$PROJECT_DIR$/vendor/bin/phpcs" />
-      <phpcs_by_interpreter asDefaultInterpreter="true" interpreter_id="54c55e60-a7af-4766-83b1-46895bd842b1" beautifier_path="$PROJECT_DIR$/vendor/bin/phpcbf" tool_path="/home/fraoult/Developpement/web/signozlib/vendor/bin/phpcs" timeout="30000" />
+      <phpcs_by_interpreter asDefaultInterpreter="true" interpreter_id="54c55e60-a7af-4766-83b1-46895bd842b1" beautifier_path="$PROJECT_DIR$/vendor/bin/phpcbf" tool_path="/home/fraoult/Developpement/web/curlmetry/vendor/bin/phpcs" timeout="30000" />
     </phpcs_settings>
   </component>
   <component name="PhpIncludePathManager">
