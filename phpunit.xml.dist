@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="tests/bootstrap.php"
+         processUncoveredFiles="true"
+         strict="true"
+         colors="true"
+         failOnWarning="true"
+         failOnRisky="true"
+         stopOnFailure="false"
+         verbose="true">
+    <testsuites>
+        <testsuite name="Curlmetry Test Suite">
+            <directory>tests/TestCase</directory>
+        </testsuite>
+    </testsuites>
+
+    <coverage processUncoveredFiles="true">
+        <include>
+            <directory suffix=".php">src</directory>
+        </include>
+        <report>
+            <html outputDirectory="coverage-html" />
+        </report>
+    </coverage>
+
+    <logging>
+        <log type="coverage-html" target="coverage-report"/>
+    </logging>
+</phpunit>

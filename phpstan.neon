@@ -1,0 +1,15 @@
+# phpstan.neon
+parameters:
+  level: 3  # Severity level (0 = permissive, 8 = strict)
+  paths:
+    - src
+
+  checkMissingVarTagTypehint: false
+  checkPhpDocMissingReturn: false
+
+# Avoid to parse undefined PHP 5.6 functions
+  ignoreErrors:
+    - '#Unsafe usage of new static#'
+    - '#Return type mixed of method .+?::jsonSerialize.+#'
+#   - '#Function [a-zA-Z0-9_\\]+ not found#'
+#   - '#Call to function .*? not found.#'

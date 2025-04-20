@@ -1,0 +1,52 @@
+{
+    "name": "sarigue/curlmetry",
+    "description": "OpenTelemetry Client (SigNoz compatible) for PHP 5.6",
+    "type": "library",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Sarigue",
+            "homepage": "github.com/sarigue",
+            "email": "contact@francois.raoult.name"
+        }
+    ],
+    "require": {
+        "php": ">=5.6",
+        "psr/http-message": "1.0.1",
+        "ext-json": "*",
+        "ext-curl": "*",
+        "ext-openssl": "*"
+    },
+    "require-dev": {
+        "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+        "phpcompatibility/php-compatibility": "^9.3",
+        "phpstan/phpstan": "^2.1",
+        "phpunit/phpunit": "^9.0",
+        "squizlabs/php_codesniffer": "@stable",
+        "xdebug/xdebug": "^3.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Curlmetry\\": "src",
+            "Psr\\Http\\Server\\": "psr",
+            "Psr\\Http\\Client\\": "psr"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Curlmetry\\Test\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true,
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
